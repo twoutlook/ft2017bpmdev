@@ -1,0 +1,2459 @@
+<com.dsc.nana.domain.workflow__definition.ProcessPackage>
+  <applicationDefinitions class="set"/>
+  <containerOID>51927ac8dedc100488d03d47ffcaf95c</containerOID>
+  <container>
+    <versions class="set">
+      <com.dsc.nana.domain.workflow__definition.ProcessPackage reference="../../.."/>
+    </versions>
+    <categoryOID>999999ProcessPackageCategoryRoot</categoryOID>
+    <id>PKG14900845146141</id>
+    <checkoutUserOID>00000000000000000000000Users0001</checkoutUserOID>
+    <checkoutTime>2017-03-21 16:30:19.0</checkoutTime>
+    <checkInTime>2017-03-21 16:24:55.0</checkInTime>
+    <lastVersion>1</lastVersion>
+    <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+    <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+    <dto>true</dto>
+    <dtoState>
+      <value>1</value>
+    </dtoState>
+    <OID>51927ac8dedc100488d03d47ffcaf95c</OID>
+    <objectVersion>2</objectVersion>
+  </container>
+  <conformanceClass>
+    <type>
+      <value>NON_BLOCKED</value>
+    </type>
+    <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+    <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+    <dto>true</dto>
+    <dtoState reference="../../container/dtoState"/>
+    <OID>51927ac9dedc100488d03d47ffcaf95c</OID>
+    <objectVersion>1</objectVersion>
+  </conformanceClass>
+  <conformanceClassOID>51927ac9dedc100488d03d47ffcaf95c</conformanceClassOID>
+  <externalPackages class="set"/>
+  <headerOID>51927acadedc100488d03d47ffcaf95c</headerOID>
+  <formInstanceType>0</formInstanceType>
+  <header>
+    <createdTime>2017-03-21 16:21:54.0</createdTime>
+    <vendor>Data Systems Consulting</vendor>
+    <xpdlVersion>1.0</xpdlVersion>
+    <bpmnVersion>2.0</bpmnVersion>
+    <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+    <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+    <dto>true</dto>
+    <dtoState reference="../../container/dtoState"/>
+    <OID>51927acadedc100488d03d47ffcaf95c</OID>
+    <objectVersion>1</objectVersion>
+  </header>
+  <participantDefinitions class="set"/>
+  <processDefinitions class="set">
+    <com.dsc.nana.domain.workflow__definition.ProcessDefinition>
+      <accessLevel>
+        <value>PUBLIC</value>
+      </accessLevel>
+      <activitySetDefinitions class="set"/>
+      <applicationDefinitions class="set">
+        <com.dsc.nana.domain.workflow__definition.app.WebApplication>
+          <urlString>../PerformWorkItem/CallAttachmentHandler.do?hdnMethod=handleAttachment</urlString>
+          <usingSSL>false</usingSSL>
+          <allowUserInteraction>true</allowUserInteraction>
+          <autoApproval>true</autoApproval>
+          <usingProxy>false</usingProxy>
+          <requestPropertyNames class="list"/>
+          <requestPropertyValues class="list"/>
+          <formalParameters class="list">
+            <com.dsc.nana.domain.workflow__definition.FormalParameter>
+              <dataType class="com.dsc.nana.domain.workflow_definition.AttachmentType">
+                <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+                <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+                <dto>true</dto>
+                <dtoState reference="../../../../../../../../container/dtoState"/>
+                <OID>00000000000000AttachmentType0001</OID>
+                <objectVersion>1</objectVersion>
+              </dataType>
+              <id>AttachmentInstance</id>
+              <index>1</index>
+              <mode>
+                <value>INOUT</value>
+              </mode>
+              <containerOID>0000000ApplicationDefinition0005</containerOID>
+              <dataTypeOID>00000000000000AttachmentType0001</dataTypeOID>
+              <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+              <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+              <dto>true</dto>
+              <dtoState reference="../../../../../../../container/dtoState"/>
+              <OID>0000000000000FormalParameter0002</OID>
+              <objectVersion>1</objectVersion>
+            </com.dsc.nana.domain.workflow__definition.FormalParameter>
+          </formalParameters>
+          <isDefault>true</isDefault>
+          <globalApplication>true</globalApplication>
+          <id>AttachmentHandler</id>
+          <name>附件處理程式</name>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.app.WebApplication</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../../../container/dtoState"/>
+          <OID>0000000ApplicationDefinition0005</OID>
+          <objectVersion>1</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.app.WebApplication>
+        <com.dsc.nana.domain.workflow__definition.app.WebApplication>
+          <urlString>../PerformWorkItem/CallFormHandler.do?hdnMethod=handleForm</urlString>
+          <usingSSL>false</usingSSL>
+          <allowUserInteraction>true</allowUserInteraction>
+          <autoApproval>true</autoApproval>
+          <usingProxy>false</usingProxy>
+          <requestPropertyNames class="list"/>
+          <requestPropertyValues class="list"/>
+          <formalParameters class="list">
+            <com.dsc.nana.domain.workflow__definition.FormalParameter>
+              <dataType class="com.dsc.nana.domain.workflow_definition.FormType">
+                <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+                <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+                <dto>true</dto>
+                <dtoState reference="../../../../../../../../container/dtoState"/>
+                <OID>00000000000000000000FormType0001</OID>
+                <objectVersion>1</objectVersion>
+              </dataType>
+              <id>FormInstance</id>
+              <index>1</index>
+              <mode reference="../../../../com.dsc.nana.domain.workflow_definition.app.WebApplication/formalParameters/com.dsc.nana.domain.workflow_definition.FormalParameter/mode"/>
+              <containerOID>0000000ApplicationDefinition0001</containerOID>
+              <dataTypeOID>00000000000000000000FormType0001</dataTypeOID>
+              <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+              <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+              <dto>true</dto>
+              <dtoState reference="../../../../../../../container/dtoState"/>
+              <OID>0000000000000FormalParameter0001</OID>
+              <objectVersion>1</objectVersion>
+            </com.dsc.nana.domain.workflow__definition.FormalParameter>
+          </formalParameters>
+          <isDefault>true</isDefault>
+          <globalApplication>true</globalApplication>
+          <id>FormHandler</id>
+          <name>表單處理程式</name>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.app.WebApplication</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../../../container/dtoState"/>
+          <OID>0000000ApplicationDefinition0001</OID>
+          <objectVersion>1</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.app.WebApplication>
+      </applicationDefinitions>
+      <formalParameters class="list"/>
+      <headerOID>51927acededc100488d03d47ffcaf95c</headerOID>
+      <header>
+        <createdTime>2017-03-21 16:22:27.0</createdTime>
+        <durationUnit>
+          <value>h</value>
+        </durationUnit>
+        <limit>0.0</limit>
+        <timeEstimation>
+          <waitingTime>0.0</waitingTime>
+          <workingTime>0.0</workingTime>
+          <duration>0.0</duration>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../../../container/dtoState"/>
+          <OID>51927ad4dedc100488d03d47ffcaf95c</OID>
+          <objectVersion>1</objectVersion>
+        </timeEstimation>
+        <timeEstimationOID>51927ad4dedc100488d03d47ffcaf95c</timeEstimationOID>
+        <validFrom>2017-03-21 16:22:27.0</validFrom>
+        <validTo>2020-03-21 16:22:27.0</validTo>
+        <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+        <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+        <dto>true</dto>
+        <dtoState reference="../../../../container/dtoState"/>
+        <OID>51927acededc100488d03d47ffcaf95c</OID>
+        <objectVersion>1</objectVersion>
+      </header>
+      <id>PKG14900845146141</id>
+      <name>Mark1</name>
+      <participantDefinitions class="set">
+        <com.dsc.nana.domain.workflow__definition.ParticipantDefinition>
+          <type>
+            <value>MANAGER</value>
+          </type>
+          <containerOID>51927ad1dedc100488d03d47ffcaf95c</containerOID>
+          <includeSubUnit>true</includeSubUnit>
+          <id>PAR14900849936736</id>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState>
+            <value>0</value>
+          </dtoState>
+          <objectVersion>0</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.ParticipantDefinition>
+        <com.dsc.nana.domain.workflow__definition.ParticipantDefinition>
+          <type>
+            <value>SYSTEM</value>
+          </type>
+          <containerOID>51927ad1dedc100488d03d47ffcaf95c</containerOID>
+          <includeSubUnit>true</includeSubUnit>
+          <autoAgentId>AutoAgent</autoAgentId>
+          <id>_SystemParticipantID</id>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.ParticipantDefinition</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../../../container/dtoState"/>
+          <OID>5192a564dedc100488d03d47ffcaf95c</OID>
+          <objectVersion>1</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.ParticipantDefinition>
+        <com.dsc.nana.domain.workflow__definition.ParticipantDefinition>
+          <type>
+            <value>PROCESS_REQUESTER</value>
+          </type>
+          <containerOID>51927ad1dedc100488d03d47ffcaf95c</containerOID>
+          <includeSubUnit>true</includeSubUnit>
+          <id>PAR14900845620686</id>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.ParticipantDefinition</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../../../container/dtoState"/>
+          <OID>5192a563dedc100488d03d47ffcaf95c</OID>
+          <objectVersion>1</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.ParticipantDefinition>
+      </participantDefinitions>
+      <processPackages class="set"/>
+      <redefinableHeaderOID>51927acfdedc100488d03d47ffcaf95c</redefinableHeaderOID>
+      <redefinableHeader>
+        <publicationStatus>
+          <value>RELEASED</value>
+        </publicationStatus>
+        <responsibles class="set"/>
+        <version>0</version>
+        <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+        <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+        <dto>true</dto>
+        <dtoState reference="../../../../container/dtoState"/>
+        <OID>51927acfdedc100488d03d47ffcaf95c</OID>
+        <objectVersion>1</objectVersion>
+      </redefinableHeader>
+      <relevantDataDefinitions class="set">
+        <com.dsc.nana.domain.workflow__definition.RelevantDataDefinition>
+          <isArray>
+            <value>FALSE</value>
+          </isArray>
+          <dataTypeOID>5192a565dedc100488d03d47ffcaf95c</dataTypeOID>
+          <dataType class="com.dsc.nana.domain.workflow_definition.FormType">
+            <formDefinitionId>BPM1003x001Mark</formDefinitionId>
+            <formDefinition>
+              <authorName>系统管理员</authorName>
+              <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+                <bundleClass>com.dsc.nana.domain.form.FormDefinition</bundleClass>
+              </bundleContainer>
+              <containerOID>456311a5dedc100488d03d47ffcaf95c</containerOID>
+              <createdTime>2017-03-21 16:22:33.083</createdTime>
+              <dataAccessDefinitions class="set"/>
+              <description></description>
+              <EleCountForDesigner>0</EleCountForDesigner>
+              <elementDefinitions class="list">
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>mark XXXXX工单交期变更通知单</textValue>
+                  <dataType>
+                    <value>0</value>
+                  </dataType>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:center;color:#000000;width:180px;font-style:normal;font-size:12px;background-color:#ffffff;left:240px;font-weight:normal;top:10px;</cssStyle>
+                  <cssDevice>
+                    <value>0</value>
+                  </cssDevice>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>180</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>240</coordinateX>
+                      <coordinateY>10</coordinateY>
+                      <alignType>
+                        <value>CENTER</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label0</id>
+                  <multiZhMap/>
+                  <name>Label0</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>部门</textValue>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;color:#000000;text-align:left;font-size:12px;font-style:normal;width:100px;background-color:#ffffff;left:20px;font-weight:normal;top:60px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>20</coordinateX>
+                      <coordinateY>60</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label1</id>
+                  <multiZhMap/>
+                  <name>Label1</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType>
+                    <value>INPUT_TYPE</value>
+                  </controlType>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine>
+                    <value>NORMAL</value>
+                  </participantDefine>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:120px;font-weight:normal;top:60px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>120</coordinateX>
+                      <coordinateY>60</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Textbox2</id>
+                  <multiZhMap/>
+                  <name>Textbox2</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType reference="../../com.dsc.nana.domain.form.InputElementDefinition/controlType"/>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine reference="../../com.dsc.nana.domain.form.InputElementDefinition/participantDefine"/>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:220px;font-weight:normal;top:60px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>220</coordinateX>
+                      <coordinateY>60</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Textbox3</id>
+                  <multiZhMap/>
+                  <name>Textbox3</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>日期</textValue>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;color:#000000;text-align:left;font-size:12px;font-style:normal;width:100px;background-color:#ffffff;left:380px;font-weight:normal;top:60px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>380</coordinateX>
+                      <coordinateY>60</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label4</id>
+                  <multiZhMap/>
+                  <name>Label4</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType reference="../../com.dsc.nana.domain.form.InputElementDefinition/controlType"/>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine reference="../../com.dsc.nana.domain.form.InputElementDefinition/participantDefine"/>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:480px;font-weight:normal;top:60px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>480</coordinateX>
+                      <coordinateY>60</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Textbox5</id>
+                  <multiZhMap/>
+                  <name>Textbox5</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>工单号</textValue>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:380px;font-weight:normal;top:100px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>380</coordinateX>
+                      <coordinateY>100</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label8</id>
+                  <multiZhMap/>
+                  <name>Label8</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType reference="../../com.dsc.nana.domain.form.InputElementDefinition/controlType"/>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine reference="../../com.dsc.nana.domain.form.InputElementDefinition/participantDefine"/>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:480px;font-weight:normal;top:100px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>480</coordinateX>
+                      <coordinateY>100</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Textbox10</id>
+                  <multiZhMap/>
+                  <name>Textbox10</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.TriggerElementDefinition>
+                  <caption>...</caption>
+                  <cssStyle>position:absolute;height:20px;color:#000000;text-align:center;font-size:12px;font-style:normal;width:40px;background-color:#ffffff;left:580px;font-weight:normal;top:100px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>40</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>580</coordinateX>
+                      <coordinateY>100</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Button11</id>
+                  <multiZhMap/>
+                  <name>Button11</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.TriggerElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>变更前</textValue>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:599px;font-style:normal;font-size:12px;background-color:#cccccc;left:20px;font-weight:normal;top:140px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>599</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-3355444</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>20</coordinateX>
+                      <coordinateY>140</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label18</id>
+                  <multiZhMap/>
+                  <name>Label18</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>变更后</textValue>
+                  <dataType>
+                    <value>0</value>
+                  </dataType>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;color:#000000;text-align:left;font-size:12px;font-style:normal;width:599px;background-color:#cccccc;left:20px;font-weight:normal;top:220px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>599</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-3355444</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>20</coordinateX>
+                      <coordinateY>220</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label20</id>
+                  <multiZhMap/>
+                  <name>Label20</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>备注</textValue>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:20px;font-weight:normal;top:310px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>20</coordinateX>
+                      <coordinateY>310</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label22</id>
+                  <multiZhMap/>
+                  <name>Label22</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType>
+                    <value>INPUT_TEXTAREA_TYPE</value>
+                  </controlType>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine reference="../../com.dsc.nana.domain.form.InputElementDefinition/participantDefine"/>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:60px;text-align:left;color:#000000;width:600px;font-style:normal;font-size:12px;background-color:#ffffff;left:20px;font-weight:normal;top:330px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>60</height>
+                      <width>600</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>20</coordinateX>
+                      <coordinateY>330</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>TextArea23</id>
+                  <multiZhMap/>
+                  <name>TextArea23</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>品名</textValue>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;color:#000000;text-align:left;font-size:12px;font-style:normal;width:100px;background-color:#ffffff;left:20px;font-weight:normal;top:250px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>20</coordinateX>
+                      <coordinateY>250</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label24</id>
+                  <multiZhMap/>
+                  <name>Label24</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType reference="../../com.dsc.nana.domain.form.InputElementDefinition/controlType"/>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine reference="../../com.dsc.nana.domain.form.InputElementDefinition/participantDefine"/>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:20px;font-weight:normal;top:270px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>20</coordinateX>
+                      <coordinateY>270</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Textbox25</id>
+                  <multiZhMap/>
+                  <name>Textbox25</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>数量</textValue>
+                  <dataType>
+                    <value>0</value>
+                  </dataType>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;color:#000000;text-align:left;font-size:12px;font-style:normal;width:100px;background-color:#ffffff;left:220px;font-weight:normal;top:250px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>220</coordinateX>
+                      <coordinateY>250</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label29</id>
+                  <multiZhMap/>
+                  <name>Label29</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType>
+                    <value>INPUT_TYPE</value>
+                  </controlType>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine>
+                    <value>NORMAL</value>
+                  </participantDefine>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition[9]/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:220px;font-weight:normal;top:270px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[9]/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>220</coordinateX>
+                      <coordinateY>270</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Textbox28</id>
+                  <multiZhMap/>
+                  <name>Textbox28</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>交期</textValue>
+                  <dataType>
+                    <value>0</value>
+                  </dataType>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:320px;font-weight:normal;top:250px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>320</coordinateX>
+                      <coordinateY>250</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[2]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label30</id>
+                  <multiZhMap/>
+                  <name>Label30</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>品名</textValue>
+                  <dataType>
+                    <value>0</value>
+                  </dataType>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;color:#000000;text-align:left;font-size:12px;font-style:normal;width:100px;background-color:#ffffff;left:20px;font-weight:normal;top:170px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>20</coordinateX>
+                      <coordinateY>170</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label2</id>
+                  <multiZhMap/>
+                  <name>Label2</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType>
+                    <value>INPUT_TYPE</value>
+                  </controlType>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine>
+                    <value>NORMAL</value>
+                  </participantDefine>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition[11]/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:20px;font-weight:normal;top:190px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[11]/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>20</coordinateX>
+                      <coordinateY>190</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[11]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Textbox1</id>
+                  <multiZhMap/>
+                  <name>Textbox1</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>数量</textValue>
+                  <dataType>
+                    <value>0</value>
+                  </dataType>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;color:#000000;text-align:left;font-size:12px;font-style:normal;width:100px;background-color:#ffffff;left:220px;font-weight:normal;top:170px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>220</coordinateX>
+                      <coordinateY>170</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[11]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label5</id>
+                  <multiZhMap/>
+                  <name>Label5</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType>
+                    <value>INPUT_TYPE</value>
+                  </controlType>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine>
+                    <value>NORMAL</value>
+                  </participantDefine>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition[12]/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:220px;font-weight:normal;top:190px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[12]/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>220</coordinateX>
+                      <coordinateY>190</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Textbox13</id>
+                  <multiZhMap/>
+                  <name>Textbox13</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>交期</textValue>
+                  <dataType>
+                    <value>0</value>
+                  </dataType>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:320px;font-weight:normal;top:170px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>320</coordinateX>
+                      <coordinateY>170</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[11]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label9</id>
+                  <multiZhMap/>
+                  <name>Label9</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.DateElementDefinition>
+                  <displayTime>false</displayTime>
+                  <targetConditionType>
+                    <value>0</value>
+                  </targetConditionType>
+                  <todayConditionType reference="../targetConditionType"/>
+                  <noBefore>false</noBefore>
+                  <noAfter>false</noAfter>
+                  <noToday>false</noToday>
+                  <controlType>
+                    <value>DIALOG_DATE</value>
+                  </controlType>
+                  <dataType>
+                    <value>3</value>
+                  </dataType>
+                  <isAppendOrgId>false</isAppendOrgId>
+                  <isRequired>false</isRequired>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine>
+                    <value>NORMAL</value>
+                  </participantDefine>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:320px;font-weight:normal;top:190px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>320</coordinateX>
+                      <coordinateY>190</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Date0</id>
+                  <multiZhMap/>
+                  <name>Date0</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.DateElementDefinition>
+                <com.dsc.nana.domain.form.DateElementDefinition>
+                  <displayTime>false</displayTime>
+                  <targetConditionType reference="../../com.dsc.nana.domain.form.DateElementDefinition/targetConditionType"/>
+                  <todayConditionType reference="../../com.dsc.nana.domain.form.DateElementDefinition/targetConditionType"/>
+                  <noBefore>false</noBefore>
+                  <noAfter>false</noAfter>
+                  <noToday>false</noToday>
+                  <controlType>
+                    <value>DIALOG_DATE</value>
+                  </controlType>
+                  <dataType>
+                    <value>3</value>
+                  </dataType>
+                  <isAppendOrgId>false</isAppendOrgId>
+                  <isRequired>false</isRequired>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine>
+                    <value>NORMAL</value>
+                  </participantDefine>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:320px;font-weight:normal;top:270px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>320</coordinateX>
+                      <coordinateY>270</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Date1</id>
+                  <multiZhMap/>
+                  <name>Date1</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.DateElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>加工别</textValue>
+                  <dataType>
+                    <value>0</value>
+                  </dataType>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:120px;font-weight:normal;top:170px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>120</coordinateX>
+                      <coordinateY>170</coordinateY>
+                      <alignType reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[4]/elementStyles/com.dsc.nana.domain.form.ElementStyle/alignType"/>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label3</id>
+                  <multiZhMap/>
+                  <name>Label3</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType>
+                    <value>INPUT_TYPE</value>
+                  </controlType>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine>
+                    <value>NORMAL</value>
+                  </participantDefine>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition[14]/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:120px;font-weight:normal;top:190px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[14]/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>120</coordinateX>
+                      <coordinateY>190</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Textbox4</id>
+                  <multiZhMap/>
+                  <name>Textbox4</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.OutputElementDefinition>
+                  <length>0</length>
+                  <textValue>加工别</textValue>
+                  <dataType>
+                    <value>0</value>
+                  </dataType>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:120px;font-weight:normal;top:250px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>120</coordinateX>
+                      <coordinateY>250</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>Label7</id>
+                  <multiZhMap/>
+                  <name>Label7</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>-1</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.OutputElementDefinition>
+                <com.dsc.nana.domain.form.InputElementDefinition>
+                  <controlType>
+                    <value>INPUT_TYPE</value>
+                  </controlType>
+                  <isRequired>false</isRequired>
+                  <isValidateDataType>false</isValidateDataType>
+                  <isValidateDataLength>false</isValidateDataLength>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine>
+                    <value>NORMAL</value>
+                  </participantDefine>
+                  <isReplaceThousandths>false</isReplaceThousandths>
+                  <isThousandths>false</isThousandths>
+                  <isCustomValidation>false</isCustomValidation>
+                  <computeFieldRule></computeFieldRule>
+                  <computeGridRule></computeGridRule>
+                  <decimalPlaces></decimalPlaces>
+                  <storeDecimalPointModus></storeDecimalPointModus>
+                  <length>0</length>
+                  <dataType reference="../../com.dsc.nana.domain.form.OutputElementDefinition[15]/dataType"/>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:120px;font-weight:normal;top:270px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device reference="../../../../com.dsc.nana.domain.form.OutputElementDefinition[15]/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>120</coordinateX>
+                      <coordinateY>270</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <id>Textbox8</id>
+                  <multiZhMap/>
+                  <name>Textbox8</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.InputElementDefinition>
+                <com.dsc.nana.domain.form.DialogInputElementDefinition>
+                  <controlType>
+                    <value>DIALOG_INPUT</value>
+                  </controlType>
+                  <dialogType>
+                    <value>1</value>
+                  </dialogType>
+                  <filter></filter>
+                  <dataType>
+                    <value>0</value>
+                  </dataType>
+                  <isAppendOrgId>false</isAppendOrgId>
+                  <isRequired>false</isRequired>
+                  <isValidateDataRequire>false</isValidateDataRequire>
+                  <participantDefine>
+                    <value>NORMAL</value>
+                  </participantDefine>
+                  <textValue></textValue>
+                  <isHideLabel>false</isHideLabel>
+                  <cssStyle>position:absolute;height:20px;text-align:left;color:#000000;width:100px;font-style:normal;font-size:12px;background-color:#ffffff;left:170px;font-weight:normal;top:90px;</cssStyle>
+                  <cssDevice reference="../../com.dsc.nana.domain.form.OutputElementDefinition/cssDevice"/>
+                  <description></description>
+                  <elementStyles class="list">
+                    <com.dsc.nana.domain.form.ElementStyle>
+                      <isShowOnDevice>true</isShowOnDevice>
+                      <device>
+                        <value>0</value>
+                      </device>
+                      <height>20</height>
+                      <width>100</width>
+                      <foregroundColor>-16777216</foregroundColor>
+                      <backgroundColor>-1</backgroundColor>
+                      <readonlyBackgroundColor>16777215</readonlyBackgroundColor>
+                      <coordinateX>170</coordinateX>
+                      <coordinateY>90</coordinateY>
+                      <alignType>
+                        <value>LEFT</value>
+                      </alignType>
+                      <rwdRowIndex>-1</rwdRowIndex>
+                      <rwdColumnIndex>-1</rwdColumnIndex>
+                      <rwdContainer></rwdContainer>
+                    </com.dsc.nana.domain.form.ElementStyle>
+                  </elementStyles>
+                  <hint></hint>
+                  <id>InputDialog0</id>
+                  <multiZhMap/>
+                  <name>InputDialog0</name>
+                  <navindex>0</navindex>
+                  <precision>0</precision>
+                  <scale>0</scale>
+                  <persistentType>0</persistentType>
+                  <doValidationOnSubmit>false</doValidationOnSubmit>
+                  <validationRules class="list"/>
+                </com.dsc.nana.domain.form.DialogInputElementDefinition>
+              </elementDefinitions>
+              <formDefinitionStyles class="list">
+                <com.dsc.nana.domain.form.FormDefinitionStyle>
+                  <device reference="../../../elementDefinitions/com.dsc.nana.domain.form.OutputElementDefinition/elementStyles/com.dsc.nana.domain.form.ElementStyle/device"/>
+                  <backgroundImageSerialize></backgroundImageSerialize>
+                  <isAbsolutePosition>true</isAbsolutePosition>
+                  <height>440</height>
+                  <width>640</width>
+                </com.dsc.nana.domain.form.FormDefinitionStyle>
+              </formDefinitionStyles>
+              <id>BPM1003x001Mark</id>
+              <multiZhMap>
+                <entry>
+                  <locale>en_US</locale>
+                  <string></string>
+                </entry>
+                <entry>
+                  <locale>zh_CN</locale>
+                  <string></string>
+                </entry>
+                <entry>
+                  <locale>zh_TW</locale>
+                  <string></string>
+                </entry>
+              </multiZhMap>
+              <name>BPM1003x001Mark</name>
+              <processCommentType>
+                <value>SHOW_ALL</value>
+              </processCommentType>
+              <publicationStatus>
+                <value>RELEASED</value>
+              </publicationStatus>
+              <script>function formCreate(){
+alert(&quot;婷婷111  formCreate&quot;)
+return true;
+}
+function formOpen(){
+alert(&quot;婷婷222  formOpen&quot;)
+return true;
+}
+function formSave(){
+alert(&quot;婷婷333  formSave&quot;)
+return true;
+}
+function formClose(){
+alert(&quot;婷婷444  formClose&quot;)
+return true;
+}
+//$-----Auto generated script block, Please do not edit or modify script below this line.-----$//</script>
+              <validFrom>2017-03-13 16:49:41.0</validFrom>
+              <version>2</version>
+              <appDesignType>
+                <value>-1</value>
+              </appDesignType>
+              <mobileScript>function formCreate(){
+return true;
+}
+function formOpen(){
+return true;
+}
+function formSave(){
+return true;
+}
+function formClose(){
+return true;
+}
+//$-----Auto generated script block, Please do not edit or modify script below this line.-----$//</mobileScript>
+              <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+              <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+              <dto>true</dto>
+              <dtoState>
+                <value>1</value>
+              </dtoState>
+              <OID>50b8dd68dedc100488d03d47ffcaf95c</OID>
+              <objectVersion>1</objectVersion>
+            </formDefinition>
+            <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+            <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+            <dto>true</dto>
+            <dtoState reference="../../../../../../container/dtoState"/>
+            <OID>5192a565dedc100488d03d47ffcaf95c</OID>
+            <objectVersion>1</objectVersion>
+          </dataType>
+          <length>0</length>
+          <containerOID>51927ad1dedc100488d03d47ffcaf95c</containerOID>
+          <id>BPM1003x001Mark</id>
+          <name>BPM1003x001Mark</name>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.RelevantDataDefinition</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../../../container/dtoState"/>
+          <OID>5192a566dedc100488d03d47ffcaf95c</OID>
+          <objectVersion>1</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.RelevantDataDefinition>
+      </relevantDataDefinitions>
+      <typeDefinitions class="set"/>
+      <mobilityProcess>0</mobilityProcess>
+      <personalDataProtection>false</personalDataProtection>
+      <decisionPatternsMapping class="set"/>
+      <additionalRules>0</additionalRules>
+      <abortable>true</abortable>
+      <bitSize>8</bitSize>
+      <lastActivityIdNum>8</lastActivityIdNum>
+      <lastActivitySetIdNum>0</lastActivitySetIdNum>
+      <lastTransitionIdNum>0</lastTransitionIdNum>
+      <lastParticipantIdNum>0</lastParticipantIdNum>
+      <lastFormalParameterIdNum>0</lastFormalParameterIdNum>
+      <allowCanceled>true</allowCanceled>
+      <notificationIntervalTimeUnit reference="../header/durationUnit"/>
+      <multiNotificationIntervalTime>24</multiNotificationIntervalTime>
+      <multiNotification>false</multiNotification>
+      <applyDefaultNoticeContent>true</applyDefaultNoticeContent>
+      <notificationContents class="set"/>
+      <processViewInformationOID>51927acddedc100488d03d47ffcaf95c</processViewInformationOID>
+      <processViewInformation>
+        <startActivityBoundInfo>
+          <x>100</x>
+          <y>100</y>
+          <width>28</width>
+          <height>20</height>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState>
+            <value>1</value>
+          </dtoState>
+          <objectVersion>0</objectVersion>
+        </startActivityBoundInfo>
+        <startActivityBoundInfoOID>51927ad2dedc100488d03d47ffcaf95c</startActivityBoundInfoOID>
+        <endActivityBoundInfoOID>51927ad3dedc100488d03d47ffcaf95c</endActivityBoundInfoOID>
+        <endActivityBoundInfo>
+          <x>300</x>
+          <y>300</y>
+          <width>28</width>
+          <height>20</height>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../startActivityBoundInfo/dtoState"/>
+          <objectVersion>0</objectVersion>
+        </endActivityBoundInfo>
+        <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+        <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+        <dto>true</dto>
+        <dtoState reference="../../../../container/dtoState"/>
+        <OID>51927acddedc100488d03d47ffcaf95c</OID>
+        <objectVersion>1</objectVersion>
+      </processViewInformation>
+      <noticable>true</noticable>
+      <noticeAllAuthority>6</noticeAllAuthority>
+      <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+        <bundleClass>com.dsc.nana.domain.workflow_definition.ProcessDefinition</bundleClass>
+      </bundleContainer>
+      <bpmXML>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+ &lt;Diagram x=&quot;0.0&quot; y=&quot;0.0&quot; width=&quot;1366.0&quot; height=&quot;768.0&quot;&gt;
+  &lt;Node ClassName=&quot;StartEvent&quot; Id=&quot;StartEvent_1&quot;&gt;
+   &lt;Font name=&quot;微軟正黑體&quot; style=&quot;0&quot; size=&quot;15&quot;/&gt;
+   &lt;Bounds x=&quot;47.0&quot; y=&quot;120.0&quot; width=&quot;30.0&quot; height=&quot;30.0&quot;/&gt;
+   &lt;ZIndex&gt;3&lt;/ZIndex&gt;
+   &lt;Background Red=&quot;255&quot; Green=&quot;255&quot; Blue=&quot;255&quot;/&gt;
+   &lt;Text&gt;&lt;/Text&gt;
+   &lt;TextBrush Red=&quot;0&quot; Green=&quot;0&quot; Blue=&quot;0&quot;/&gt;
+   &lt;ContainerNode NodeId=&quot;StartEvent_1&quot;&gt;NoContainerNode&lt;/ContainerNode&gt;
+  &lt;/Node&gt;
+  &lt;Node ClassName=&quot;EndEvent&quot; Id=&quot;EndEvent_2&quot;&gt;
+   &lt;Font name=&quot;微軟正黑體&quot; style=&quot;0&quot; size=&quot;15&quot;/&gt;
+   &lt;Bounds x=&quot;480.0&quot; y=&quot;140.0&quot; width=&quot;30.0&quot; height=&quot;30.0&quot;/&gt;
+   &lt;ZIndex&gt;3&lt;/ZIndex&gt;
+   &lt;Background Red=&quot;255&quot; Green=&quot;255&quot; Blue=&quot;255&quot;/&gt;
+   &lt;Text&gt;&lt;/Text&gt;
+   &lt;TextBrush Red=&quot;0&quot; Green=&quot;0&quot; Blue=&quot;0&quot;/&gt;
+   &lt;ContainerNode NodeId=&quot;EndEvent_2&quot;&gt;NoContainerNode&lt;/ContainerNode&gt;
+  &lt;/Node&gt;
+  &lt;Node ClassName=&quot;UserTask&quot; Id=&quot;UserTask_3&quot;&gt;
+   &lt;Font name=&quot;微軟正黑體&quot; style=&quot;0&quot; size=&quot;10&quot;/&gt;
+   &lt;Bounds x=&quot;236.0&quot; y=&quot;133.0&quot; width=&quot;80.0&quot; height=&quot;50.0&quot;/&gt;
+   &lt;ZIndex&gt;3&lt;/ZIndex&gt;
+   &lt;Background Red=&quot;220&quot; Green=&quot;230&quot; Blue=&quot;242&quot;/&gt;
+   &lt;Text&gt;人员任务&lt;/Text&gt;
+   &lt;TextBrush Red=&quot;0&quot; Green=&quot;0&quot; Blue=&quot;0&quot;/&gt;
+   &lt;ContainerNode NodeId=&quot;UserTask_3&quot;&gt;NoContainerNode&lt;/ContainerNode&gt;
+  &lt;/Node&gt;
+  &lt;Node ClassName=&quot;UserTask&quot; Id=&quot;UserTask_6&quot;&gt;
+   &lt;Font name=&quot;微軟正黑體&quot; style=&quot;0&quot; size=&quot;10&quot;/&gt;
+   &lt;Bounds x=&quot;389.0&quot; y=&quot;160.0&quot; width=&quot;80.0&quot; height=&quot;50.0&quot;/&gt;
+   &lt;ZIndex&gt;3&lt;/ZIndex&gt;
+   &lt;Background Red=&quot;220&quot; Green=&quot;230&quot; Blue=&quot;242&quot;/&gt;
+   &lt;Text&gt;主管&lt;/Text&gt;
+   &lt;TextBrush Red=&quot;0&quot; Green=&quot;0&quot; Blue=&quot;0&quot;/&gt;
+   &lt;ContainerNode NodeId=&quot;UserTask_6&quot;&gt;NoContainerNode&lt;/ContainerNode&gt;
+  &lt;/Node&gt;
+  &lt;Node ClassName=&quot;DiagramLink&quot; Id=&quot;Link_4&quot;&gt;
+   &lt;Bounds x=&quot;76.91202&quot; y=&quot;136.60269&quot; width=&quot;159.08798&quot; height=&quot;22.111588&quot;/&gt;
+   &lt;ZIndex&gt;4&lt;/ZIndex&gt;
+   &lt;Background Red=&quot;0&quot; Green=&quot;0&quot; Blue=&quot;0&quot; size=&quot;0&quot;/&gt;
+   &lt;Form Id=&quot;StartEvent_1&quot;&gt;StartEvent&lt;/Form&gt;
+   &lt;To Id=&quot;UserTask_3&quot;&gt;UserTask&lt;/To&gt;
+   &lt;Text&gt;&lt;/Text&gt;
+   &lt;PointList&gt;
+    &lt;Point x=&quot;76.91202&quot; y=&quot;136.60269&quot;/&gt;
+    &lt;Point x=&quot;200.0&quot; y=&quot;136.60269&quot;/&gt;
+    &lt;Point x=&quot;200.0&quot; y=&quot;158.71428&quot;/&gt;
+    &lt;Point x=&quot;236.0&quot; y=&quot;158.71428&quot;/&gt;
+   &lt;/PointList&gt;
+   &lt;ContainerNode NodeId=&quot;NoNodeId&quot;&gt;NoContainerNode&lt;/ContainerNode&gt;
+  &lt;/Node&gt;
+  &lt;Node ClassName=&quot;DiagramLink&quot; Id=&quot;Link_7&quot;&gt;
+   &lt;Bounds x=&quot;315.0&quot; y=&quot;164.05882&quot; width=&quot;75.0&quot; height=&quot;19.798325&quot;/&gt;
+   &lt;ZIndex&gt;6&lt;/ZIndex&gt;
+   &lt;Background Red=&quot;0&quot; Green=&quot;0&quot; Blue=&quot;0&quot; size=&quot;0&quot;/&gt;
+   &lt;Form Id=&quot;UserTask_3&quot;&gt;UserTask&lt;/Form&gt;
+   &lt;To Id=&quot;UserTask_6&quot;&gt;UserTask&lt;/To&gt;
+   &lt;Text&gt;&lt;/Text&gt;
+   &lt;PointList&gt;
+    &lt;Point x=&quot;316.0&quot; y=&quot;165.05882&quot;/&gt;
+    &lt;Point x=&quot;360.0&quot; y=&quot;165.05882&quot;/&gt;
+    &lt;Point x=&quot;360.0&quot; y=&quot;182.85715&quot;/&gt;
+    &lt;Point x=&quot;389.0&quot; y=&quot;182.85715&quot;/&gt;
+   &lt;/PointList&gt;
+   &lt;ContainerNode NodeId=&quot;NoNodeId&quot;&gt;NoContainerNode&lt;/ContainerNode&gt;
+  &lt;/Node&gt;
+  &lt;Node ClassName=&quot;DiagramLink&quot; Id=&quot;Link_8&quot;&gt;
+   &lt;Bounds x=&quot;467.50464&quot; y=&quot;166.04335&quot; width=&quot;26.577423&quot; height=&quot;4.8205566&quot;/&gt;
+   &lt;ZIndex&gt;7&lt;/ZIndex&gt;
+   &lt;Background Red=&quot;0&quot; Green=&quot;0&quot; Blue=&quot;0&quot; size=&quot;0&quot;/&gt;
+   &lt;Form Id=&quot;UserTask_6&quot;&gt;UserTask&lt;/Form&gt;
+   &lt;To Id=&quot;EndEvent_2&quot;&gt;EndEvent&lt;/To&gt;
+   &lt;Text&gt;&lt;/Text&gt;
+   &lt;PointList&gt;
+    &lt;Point x=&quot;468.50464&quot; y=&quot;167.04335&quot;/&gt;
+    &lt;Point x=&quot;488.0&quot; y=&quot;167.04335&quot;/&gt;
+    &lt;Point x=&quot;493.08206&quot; y=&quot;168.0&quot;/&gt;
+    &lt;Point x=&quot;493.08206&quot; y=&quot;169.8639&quot;/&gt;
+   &lt;/PointList&gt;
+   &lt;ContainerNode NodeId=&quot;NoNodeId&quot;&gt;NoContainerNode&lt;/ContainerNode&gt;
+  &lt;/Node&gt;
+ &lt;/Diagram&gt;
+</bpmXML>
+      <bpmLanes class="set"/>
+      <bpmPools class="set"/>
+      <sysintegrationWith>
+        <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+        <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+        <dto>true</dto>
+        <dtoState reference="../../../../container/dtoState"/>
+        <OID>51927ad0dedc100488d03d47ffcaf95c</OID>
+        <objectVersion>1</objectVersion>
+      </sysintegrationWith>
+      <sysintegrationOID>51927ad0dedc100488d03d47ffcaf95c</sysintegrationOID>
+      <activityDefinitions class="set">
+        <com.dsc.nana.domain.workflow__definition.ActivityDefinition>
+          <activityType class="com.dsc.nana.domain.workflow_definition.BpmEvent">
+            <eventType>endEvent</eventType>
+            <id>EndEvent_2</id>
+            <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+            <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+            <dto>true</dto>
+            <dtoState reference="../../../../../../container/dtoState"/>
+            <OID>51927ad5dedc100488d03d47ffcaf95c</OID>
+            <objectVersion>1</objectVersion>
+          </activityType>
+          <activityTypeOID>51927ad5dedc100488d03d47ffcaf95c</activityTypeOID>
+          <ableToInvokeRefProcess>false</ableToInvokeRefProcess>
+          <applyDefaultNoticeContent>true</applyDefaultNoticeContent>
+          <ableToAskActivityReexecuteType>
+            <value>4</value>
+          </ableToAskActivityReexecuteType>
+          <addingActivityAuthority>0</addingActivityAuthority>
+          <container class="com.dsc.nana.domain.workflow_definition.ProcessDefinition" reference="../../.."/>
+          <batchPerformable>false</batchPerformable>
+          <bypassable>true</bypassable>
+          <regainable>true</regainable>
+          <containerOID>51927ad1dedc100488d03d47ffcaf95c</containerOID>
+          <deadlines class="set"/>
+          <finishMode>
+            <value>AUTOMATIC</value>
+          </finishMode>
+          <limit>0.0</limit>
+          <noticeAuthority>1</noticeAuthority>
+          <requiredToSpecifyOrgUnit>false</requiredToSpecifyOrgUnit>
+          <reassignableAuthority>3</reassignableAuthority>
+          <secured>false</secured>
+          <startMode reference="../finishMode"/>
+          <transitionRestrictions class="set">
+            <com.dsc.nana.domain.workflow__definition.TransitionRestriction>
+              <joinType>
+                <value>AND</value>
+              </joinType>
+              <splitType>
+                <value>AND</value>
+              </splitType>
+              <containerOID>51927ad7dedc100488d03d47ffcaf95c</containerOID>
+              <transitionReferences class="set"/>
+              <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+              <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+              <dto>true</dto>
+              <dtoState reference="../../../../../../../container/dtoState"/>
+              <OID>51927ad8dedc100488d03d47ffcaf95c</OID>
+              <objectVersion>1</objectVersion>
+            </com.dsc.nana.domain.workflow__definition.TransitionRestriction>
+          </transitionRestrictions>
+          <unReexecuteType>
+            <wrappedValue class="string">INCLUDE</wrappedValue>
+          </unReexecuteType>
+          <requiredToTransForm>false</requiredToTransForm>
+          <unitManager>false</unitManager>
+          <responsible>false</responsible>
+          <disNoticeSend>false</disNoticeSend>
+          <proInsLevel>false</proInsLevel>
+          <printActivity>true</printActivity>
+          <autoDelivery>
+            <value>1</value>
+          </autoDelivery>
+          <reexecuteComm>false</reexecuteComm>
+          <batchComm>false</batchComm>
+          <notificationAttachment>false</notificationAttachment>
+          <confirmAttachmentHits>false</confirmAttachmentHits>
+          <firstNoticeUnitManager>false</firstNoticeUnitManager>
+          <firstNoticeInitiator>false</firstNoticeInitiator>
+          <firstNoticeResponsible>false</firstNoticeResponsible>
+          <secondNoticeUnitManager>false</secondNoticeUnitManager>
+          <secondNoticeInitiator>false</secondNoticeInitiator>
+          <secondNoticeResponsible>false</secondNoticeResponsible>
+          <thirdNoticeUnitManager>false</thirdNoticeUnitManager>
+          <thirdNoticeInitiator>false</thirdNoticeInitiator>
+          <thirdNoticeResponsible>false</thirdNoticeResponsible>
+          <finishWorkPercentage>100.0</finishWorkPercentage>
+          <multiUserMode>
+            <value>FIREST_GET_FIRST_WIN</value>
+          </multiUserMode>
+          <boundViewInformationOID>51927ad6dedc100488d03d47ffcaf95c</boundViewInformationOID>
+          <boundViewInformation>
+            <x>0</x>
+            <y>0</y>
+            <width>0</width>
+            <height>0</height>
+            <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+            <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+            <dto>true</dto>
+            <dtoState reference="../../../../../../container/dtoState"/>
+            <OID>51927ad6dedc100488d03d47ffcaf95c</OID>
+            <objectVersion>1</objectVersion>
+          </boundViewInformation>
+          <dealOvertimeActivityType>
+            <value>SEND_NOTIFICATION</value>
+          </dealOvertimeActivityType>
+          <performType>
+            <value>NORMAL</value>
+          </performType>
+          <multiNotificationIntervalTime>-1</multiNotificationIntervalTime>
+          <notificationIntervalTimeUnit reference="../../../header/durationUnit"/>
+          <multiNotification>true</multiNotification>
+          <notificationContents class="set"/>
+          <id>EndEvent_2</id>
+          <isProcessTemplateActivity>false</isProcessTemplateActivity>
+          <straightSignOff>false</straightSignOff>
+          <mappingDocProps class="set"/>
+          <bpmnType>EndEvent</bpmnType>
+          <refUserTasks class="set"/>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.ActivityDefinition</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../../../container/dtoState"/>
+          <OID>51927ad7dedc100488d03d47ffcaf95c</OID>
+          <objectVersion>1</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.ActivityDefinition>
+        <com.dsc.nana.domain.workflow__definition.ActivityDefinition>
+          <activityType class="com.dsc.nana.domain.workflow_definition.Implementation">
+            <implementationTypes class="list">
+              <com.dsc.nana.domain.workflow__definition.No>
+                <containerOID>51927ad9dedc100488d03d47ffcaf95c</containerOID>
+                <index>0</index>
+                <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+                <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+                <dto>true</dto>
+                <dtoState reference="../../../../../../../../container/dtoState"/>
+                <OID>51927adddedc100488d03d47ffcaf95c</OID>
+                <objectVersion>1</objectVersion>
+              </com.dsc.nana.domain.workflow__definition.No>
+            </implementationTypes>
+            <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+            <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+            <dto>true</dto>
+            <dtoState reference="../../../../../../container/dtoState"/>
+            <OID>51927ad9dedc100488d03d47ffcaf95c</OID>
+            <objectVersion>1</objectVersion>
+          </activityType>
+          <activityTypeOID>51927ad9dedc100488d03d47ffcaf95c</activityTypeOID>
+          <ableToInvokeRefProcess>false</ableToInvokeRefProcess>
+          <applyDefaultNoticeContent>true</applyDefaultNoticeContent>
+          <ableToAskActivityReexecuteType reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/ableToAskActivityReexecuteType"/>
+          <addingActivityAuthority>0</addingActivityAuthority>
+          <container class="com.dsc.nana.domain.workflow_definition.ProcessDefinition" reference="../../.."/>
+          <batchPerformable>false</batchPerformable>
+          <bypassable>true</bypassable>
+          <regainable>true</regainable>
+          <containerOID>51927ad1dedc100488d03d47ffcaf95c</containerOID>
+          <deadlines class="set"/>
+          <finishMode reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/finishMode"/>
+          <limit>0.0</limit>
+          <noticeAuthority>1</noticeAuthority>
+          <performerIds>PAR14900845620686</performerIds>
+          <requiredToSpecifyOrgUnit>false</requiredToSpecifyOrgUnit>
+          <reassignableAuthority>3</reassignableAuthority>
+          <secured>false</secured>
+          <startMode reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/finishMode"/>
+          <transitionRestrictions class="set">
+            <com.dsc.nana.domain.workflow__definition.TransitionRestriction>
+              <joinType reference="../../../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/transitionRestrictions/com.dsc.nana.domain.workflow_definition.TransitionRestriction/joinType"/>
+              <splitType reference="../../../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/transitionRestrictions/com.dsc.nana.domain.workflow_definition.TransitionRestriction/splitType"/>
+              <containerOID>51927adcdedc100488d03d47ffcaf95c</containerOID>
+              <transitionReferences class="set">
+                <com.dsc.nana.domain.workflow__definition.TransitionReference>
+                  <transitionDefinitionId>Link_7</transitionDefinitionId>
+                  <containerOID>5192a55cdedc100488d03d47ffcaf95c</containerOID>
+                  <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+                  <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+                  <dto>true</dto>
+                  <dtoState reference="../../../../../../../participantDefinitions/com.dsc.nana.domain.workflow_definition.ParticipantDefinition/dtoState"/>
+                  <objectVersion>0</objectVersion>
+                </com.dsc.nana.domain.workflow__definition.TransitionReference>
+              </transitionReferences>
+              <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+              <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+              <dto>true</dto>
+              <dtoState reference="../../../../../../../container/dtoState"/>
+              <OID>5192a55cdedc100488d03d47ffcaf95c</OID>
+              <objectVersion>1</objectVersion>
+            </com.dsc.nana.domain.workflow__definition.TransitionRestriction>
+          </transitionRestrictions>
+          <unReexecuteType reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/unReexecuteType"/>
+          <requiredToTransForm>false</requiredToTransForm>
+          <unitManager>false</unitManager>
+          <responsible>false</responsible>
+          <disNoticeSend>false</disNoticeSend>
+          <proInsLevel>false</proInsLevel>
+          <printActivity>true</printActivity>
+          <autoDelivery reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/autoDelivery"/>
+          <reexecuteComm>false</reexecuteComm>
+          <batchComm>false</batchComm>
+          <notificationAttachment>false</notificationAttachment>
+          <confirmAttachmentHits>false</confirmAttachmentHits>
+          <firstNoticeUnitManager>false</firstNoticeUnitManager>
+          <firstNoticeInitiator>false</firstNoticeInitiator>
+          <firstNoticeResponsible>false</firstNoticeResponsible>
+          <secondNoticeUnitManager>false</secondNoticeUnitManager>
+          <secondNoticeInitiator>false</secondNoticeInitiator>
+          <secondNoticeResponsible>false</secondNoticeResponsible>
+          <thirdNoticeUnitManager>false</thirdNoticeUnitManager>
+          <thirdNoticeInitiator>false</thirdNoticeInitiator>
+          <thirdNoticeResponsible>false</thirdNoticeResponsible>
+          <finishWorkPercentage>100.0</finishWorkPercentage>
+          <multiUserMode reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/multiUserMode"/>
+          <boundViewInformationOID>51927adadedc100488d03d47ffcaf95c</boundViewInformationOID>
+          <boundViewInformation>
+            <x>0</x>
+            <y>0</y>
+            <width>0</width>
+            <height>0</height>
+            <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+            <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+            <dto>true</dto>
+            <dtoState reference="../../../../../../container/dtoState"/>
+            <OID>51927adadedc100488d03d47ffcaf95c</OID>
+            <objectVersion>1</objectVersion>
+          </boundViewInformation>
+          <formFieldAccessDefinitionOID>51927adbdedc100488d03d47ffcaf95c</formFieldAccessDefinitionOID>
+          <formFieldAccessDefinition>
+            <formFieldAccessControl> &lt;FormFieldAccessControl&gt;                                            &lt;BPM1003x001Mark&gt;                                                           &lt;InputDialog0&gt;ENABLED&lt;/InputDialog0&gt;                                                          &lt;Textbox8&gt;ENABLED&lt;/Textbox8&gt;                                                      &lt;Textbox4&gt;ENABLED&lt;/Textbox4&gt;                                                  &lt;Date1&gt;ENABLED&lt;/Date1&gt;                                              &lt;Date0&gt;ENABLED&lt;/Date0&gt;                                          &lt;Textbox13&gt;ENABLED&lt;/Textbox13&gt;                                      &lt;Textbox1&gt;ENABLED&lt;/Textbox1&gt;                                  &lt;Textbox28&gt;ENABLED&lt;/Textbox28&gt;                              &lt;Textbox25&gt;ENABLED&lt;/Textbox25&gt;                          &lt;TextArea23&gt;ENABLED&lt;/TextArea23&gt;                      &lt;Button11&gt;ENABLED&lt;/Button11&gt;                  &lt;Textbox10&gt;ENABLED&lt;/Textbox10&gt;              &lt;Textbox5&gt;ENABLED&lt;/Textbox5&gt;          &lt;Textbox3&gt;ENABLED&lt;/Textbox3&gt;      &lt;Textbox2&gt;ENABLED&lt;/Textbox2&gt;  &lt;/BPM1003x001Mark&gt;               &lt;/FormFieldAccessControl&gt;</formFieldAccessControl>
+            <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+            <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+            <dto>true</dto>
+            <dtoState reference="../../../../../../container/dtoState"/>
+            <OID>51927adbdedc100488d03d47ffcaf95c</OID>
+            <objectVersion>1</objectVersion>
+          </formFieldAccessDefinition>
+          <dealOvertimeActivityType reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/dealOvertimeActivityType"/>
+          <performType reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/performType"/>
+          <multiNotificationIntervalTime>-1</multiNotificationIntervalTime>
+          <notificationIntervalTimeUnit reference="../../../header/durationUnit"/>
+          <multiNotification>false</multiNotification>
+          <notificationContents class="set"/>
+          <id>UserTask_3</id>
+          <name>人员任务</name>
+          <isProcessTemplateActivity>false</isProcessTemplateActivity>
+          <straightSignOff>false</straightSignOff>
+          <mappingDocProps class="set"/>
+          <bpmnType>UserTask</bpmnType>
+          <refUserTasks class="set"/>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.ActivityDefinition</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../../../container/dtoState"/>
+          <OID>51927adcdedc100488d03d47ffcaf95c</OID>
+          <objectVersion>1</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.ActivityDefinition>
+        <com.dsc.nana.domain.workflow__definition.ActivityDefinition>
+          <activityType class="com.dsc.nana.domain.workflow_definition.BpmEvent">
+            <eventType>startEvent</eventType>
+            <id>StartEvent_1</id>
+            <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+            <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+            <dto>true</dto>
+            <dtoState reference="../../../../../../container/dtoState"/>
+            <OID>5192a55ededc100488d03d47ffcaf95c</OID>
+            <objectVersion>1</objectVersion>
+          </activityType>
+          <activityTypeOID>5192a55ededc100488d03d47ffcaf95c</activityTypeOID>
+          <ableToInvokeRefProcess>false</ableToInvokeRefProcess>
+          <applyDefaultNoticeContent>true</applyDefaultNoticeContent>
+          <ableToAskActivityReexecuteType reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/ableToAskActivityReexecuteType"/>
+          <addingActivityAuthority>0</addingActivityAuthority>
+          <container class="com.dsc.nana.domain.workflow_definition.ProcessDefinition" reference="../../.."/>
+          <batchPerformable>false</batchPerformable>
+          <bypassable>true</bypassable>
+          <regainable>true</regainable>
+          <containerOID>51927ad1dedc100488d03d47ffcaf95c</containerOID>
+          <deadlines class="set"/>
+          <finishMode reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/finishMode"/>
+          <limit>0.0</limit>
+          <noticeAuthority>1</noticeAuthority>
+          <requiredToSpecifyOrgUnit>false</requiredToSpecifyOrgUnit>
+          <reassignableAuthority>3</reassignableAuthority>
+          <secured>false</secured>
+          <startMode reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/finishMode"/>
+          <transitionRestrictions class="set">
+            <com.dsc.nana.domain.workflow__definition.TransitionRestriction>
+              <joinType reference="../../../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/transitionRestrictions/com.dsc.nana.domain.workflow_definition.TransitionRestriction/joinType"/>
+              <splitType reference="../../../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/transitionRestrictions/com.dsc.nana.domain.workflow_definition.TransitionRestriction/splitType"/>
+              <containerOID>5192a560dedc100488d03d47ffcaf95c</containerOID>
+              <transitionReferences class="set">
+                <com.dsc.nana.domain.workflow__definition.TransitionReference>
+                  <transitionDefinitionId>Link_4</transitionDefinitionId>
+                  <containerOID>5192a561dedc100488d03d47ffcaf95c</containerOID>
+                  <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+                  <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+                  <dto>true</dto>
+                  <dtoState reference="../../../../../../../../../container/dtoState"/>
+                  <OID>5192a562dedc100488d03d47ffcaf95c</OID>
+                  <objectVersion>1</objectVersion>
+                </com.dsc.nana.domain.workflow__definition.TransitionReference>
+              </transitionReferences>
+              <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+              <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+              <dto>true</dto>
+              <dtoState reference="../../../../../../../container/dtoState"/>
+              <OID>5192a561dedc100488d03d47ffcaf95c</OID>
+              <objectVersion>1</objectVersion>
+            </com.dsc.nana.domain.workflow__definition.TransitionRestriction>
+          </transitionRestrictions>
+          <unReexecuteType reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/unReexecuteType"/>
+          <requiredToTransForm>false</requiredToTransForm>
+          <unitManager>false</unitManager>
+          <responsible>false</responsible>
+          <disNoticeSend>false</disNoticeSend>
+          <proInsLevel>false</proInsLevel>
+          <printActivity>true</printActivity>
+          <autoDelivery reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/autoDelivery"/>
+          <reexecuteComm>false</reexecuteComm>
+          <batchComm>false</batchComm>
+          <notificationAttachment>false</notificationAttachment>
+          <confirmAttachmentHits>false</confirmAttachmentHits>
+          <firstNoticeUnitManager>false</firstNoticeUnitManager>
+          <firstNoticeInitiator>false</firstNoticeInitiator>
+          <firstNoticeResponsible>false</firstNoticeResponsible>
+          <secondNoticeUnitManager>false</secondNoticeUnitManager>
+          <secondNoticeInitiator>false</secondNoticeInitiator>
+          <secondNoticeResponsible>false</secondNoticeResponsible>
+          <thirdNoticeUnitManager>false</thirdNoticeUnitManager>
+          <thirdNoticeInitiator>false</thirdNoticeInitiator>
+          <thirdNoticeResponsible>false</thirdNoticeResponsible>
+          <finishWorkPercentage>100.0</finishWorkPercentage>
+          <multiUserMode reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/multiUserMode"/>
+          <boundViewInformationOID>5192a55fdedc100488d03d47ffcaf95c</boundViewInformationOID>
+          <boundViewInformation>
+            <x>0</x>
+            <y>0</y>
+            <width>0</width>
+            <height>0</height>
+            <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+            <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+            <dto>true</dto>
+            <dtoState reference="../../../../../../container/dtoState"/>
+            <OID>5192a55fdedc100488d03d47ffcaf95c</OID>
+            <objectVersion>1</objectVersion>
+          </boundViewInformation>
+          <dealOvertimeActivityType reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/dealOvertimeActivityType"/>
+          <performType reference="../../com.dsc.nana.domain.workflow_definition.ActivityDefinition/performType"/>
+          <multiNotificationIntervalTime>-1</multiNotificationIntervalTime>
+          <notificationIntervalTimeUnit reference="../../../header/durationUnit"/>
+          <multiNotification>true</multiNotification>
+          <notificationContents class="set"/>
+          <id>StartEvent_1</id>
+          <isProcessTemplateActivity>false</isProcessTemplateActivity>
+          <straightSignOff>false</straightSignOff>
+          <mappingDocProps class="set"/>
+          <bpmnType>StartEvent</bpmnType>
+          <refUserTasks class="set"/>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.ActivityDefinition</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../../../container/dtoState"/>
+          <OID>5192a560dedc100488d03d47ffcaf95c</OID>
+          <objectVersion>1</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.ActivityDefinition>
+        <com.dsc.nana.domain.workflow__definition.ActivityDefinition>
+          <activityType class="com.dsc.nana.domain.workflow_definition.Implementation">
+            <implementationTypes class="list">
+              <com.dsc.nana.domain.workflow__definition.Tool>
+                <actualParameters class="list">
+                  <com.dsc.nana.domain.workflow__definition.ActualParameter>
+                    <relevantDataDefinitionId>BPM1003x001Mark</relevantDataDefinitionId>
+                    <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+                    <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+                    <dto>true</dto>
+                    <dtoState reference="../../../../../../../../participantDefinitions/com.dsc.nana.domain.workflow_definition.ParticipantDefinition/dtoState"/>
+                    <objectVersion>0</objectVersion>
+                  </com.dsc.nana.domain.workflow__definition.ActualParameter>
+                </actualParameters>
+                <applicationDefinitionId>FormHandler</applicationDefinitionId>
+                <applicationMode class="com.dsc.nana.domain.workflow_definition.FormOperationDefinition">
+                  <operationType>1</operationType>
+                  <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+                  <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+                  <dto>true</dto>
+                  <dtoState reference="../../../../../../../processViewInformation/startActivityBoundInfo/dtoState"/>
+                  <objectVersion>0</objectVersion>
+                </applicationMode>
+                <index>1</index>
+                <type>
+                  <value>APPLICATION</value>
+                </type>
+                <id>14900849901165</id>
+                <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+                <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+                <dto>true</dto>
+                <dtoState reference="../../../../../../participantDefinitions/com.dsc.nana.domain.workflow_definition.ParticipantDefinition/dtoState"/>
+                <objectVersion>0</objectVersion>
+              </com.dsc.nana.domain.workflow__definition.Tool>
+            </implementationTypes>
+            <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+            <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+            <dto>true</dto>
+            <dtoState reference="../../../../participantDefinitions/com.dsc.nana.domain.workflow_definition.ParticipantDefinition/dtoState"/>
+            <objectVersion>0</objectVersion>
+          </activityType>
+          <ableToInvokeRefProcess>false</ableToInvokeRefProcess>
+          <applyDefaultNoticeContent>true</applyDefaultNoticeContent>
+          <ableToAskActivityReexecuteType>
+            <value>4</value>
+          </ableToAskActivityReexecuteType>
+          <addingActivityAuthority>0</addingActivityAuthority>
+          <container class="com.dsc.nana.domain.workflow_definition.ProcessDefinition" reference="../../.."/>
+          <batchPerformable>false</batchPerformable>
+          <bypassable>true</bypassable>
+          <regainable>true</regainable>
+          <finishMode>
+            <value>AUTOMATIC</value>
+          </finishMode>
+          <limit>0.0</limit>
+          <noticeAuthority>1</noticeAuthority>
+          <performerIds>PAR14900849936736</performerIds>
+          <requiredToSpecifyOrgUnit>false</requiredToSpecifyOrgUnit>
+          <reassignableAuthority>3</reassignableAuthority>
+          <secured>false</secured>
+          <startMode reference="../finishMode"/>
+          <transitionRestrictions class="set">
+            <com.dsc.nana.domain.workflow__definition.TransitionRestriction>
+              <joinType>
+                <value>AND</value>
+              </joinType>
+              <splitType>
+                <value>AND</value>
+              </splitType>
+              <transitionReferences class="set">
+                <com.dsc.nana.domain.workflow__definition.TransitionReference>
+                  <transitionDefinitionId>Link_8</transitionDefinitionId>
+                  <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+                  <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+                  <dto>true</dto>
+                  <dtoState reference="../../../../../../../participantDefinitions/com.dsc.nana.domain.workflow_definition.ParticipantDefinition/dtoState"/>
+                  <objectVersion>0</objectVersion>
+                </com.dsc.nana.domain.workflow__definition.TransitionReference>
+              </transitionReferences>
+              <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+              <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+              <dto>true</dto>
+              <dtoState reference="../../../../../participantDefinitions/com.dsc.nana.domain.workflow_definition.ParticipantDefinition/dtoState"/>
+              <objectVersion>0</objectVersion>
+            </com.dsc.nana.domain.workflow__definition.TransitionRestriction>
+          </transitionRestrictions>
+          <unReexecuteType>
+            <wrappedValue class="string">INCLUDE</wrappedValue>
+          </unReexecuteType>
+          <requiredToTransForm>false</requiredToTransForm>
+          <unitManager>false</unitManager>
+          <responsible>false</responsible>
+          <disNoticeSend>false</disNoticeSend>
+          <proInsLevel>false</proInsLevel>
+          <printActivity>true</printActivity>
+          <autoDelivery>
+            <value>1</value>
+          </autoDelivery>
+          <automaticPhrase></automaticPhrase>
+          <reexecuteComm>false</reexecuteComm>
+          <batchComm>false</batchComm>
+          <notificationAttachment>false</notificationAttachment>
+          <confirmAttachmentHits>false</confirmAttachmentHits>
+          <firstNoticeUnitManager>false</firstNoticeUnitManager>
+          <firstNoticeInitiator>false</firstNoticeInitiator>
+          <firstNoticeResponsible>false</firstNoticeResponsible>
+          <secondNoticeUnitManager>false</secondNoticeUnitManager>
+          <secondNoticeInitiator>false</secondNoticeInitiator>
+          <secondNoticeResponsible>false</secondNoticeResponsible>
+          <thirdNoticeUnitManager>false</thirdNoticeUnitManager>
+          <thirdNoticeInitiator>false</thirdNoticeInitiator>
+          <thirdNoticeResponsible>false</thirdNoticeResponsible>
+          <finishWorkPercentage>100.0</finishWorkPercentage>
+          <formFieldAccessDefinition>
+            <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+            <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+            <dto>true</dto>
+            <dtoState reference="../../../../participantDefinitions/com.dsc.nana.domain.workflow_definition.ParticipantDefinition/dtoState"/>
+            <objectVersion>0</objectVersion>
+          </formFieldAccessDefinition>
+          <multiNotificationIntervalTime>-1</multiNotificationIntervalTime>
+          <multiNotification>false</multiNotification>
+          <notificationContents class="set">
+            <com.dsc.nana.domain.workflow__engine.notification.NotificationContent>
+              <locale reference="../../../../../relevantDataDefinitions/com.dsc.nana.domain.workflow_definition.RelevantDataDefinition/dataType/formDefinition/multiZhMap/entry/locale"/>
+              <contentType>
+                <value>7</value>
+              </contentType>
+              <mailFormatType>
+                <value>0</value>
+              </mailFormatType>
+              <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+              <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+              <dto>true</dto>
+              <dtoState reference="../../../../../participantDefinitions/com.dsc.nana.domain.workflow_definition.ParticipantDefinition/dtoState"/>
+              <objectVersion>0</objectVersion>
+            </com.dsc.nana.domain.workflow__engine.notification.NotificationContent>
+          </notificationContents>
+          <id>UserTask_6</id>
+          <name>主管</name>
+          <isProcessTemplateActivity>false</isProcessTemplateActivity>
+          <straightSignOff>false</straightSignOff>
+          <bpmnType>UserTask</bpmnType>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../participantDefinitions/com.dsc.nana.domain.workflow_definition.ParticipantDefinition/dtoState"/>
+          <objectVersion>0</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.ActivityDefinition>
+      </activityDefinitions>
+      <transitionDefinitions class="set">
+        <com.dsc.nana.domain.workflow__definition.TransitionDefinition>
+          <fromActivityDefinitionId>UserTask_6</fromActivityDefinitionId>
+          <fromActivityDefinition reference="../../../activityDefinitions/com.dsc.nana.domain.workflow_definition.ActivityDefinition[4]"/>
+          <toActivityDefinition reference="../../../activityDefinitions/com.dsc.nana.domain.workflow_definition.ActivityDefinition"/>
+          <toActivityDefinitionId>EndEvent_2</toActivityDefinitionId>
+          <container class="com.dsc.nana.domain.workflow_definition.ProcessDefinition" reference="../../.."/>
+          <id>Link_8</id>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.TransitionDefinition</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../processViewInformation/startActivityBoundInfo/dtoState"/>
+          <objectVersion>0</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.TransitionDefinition>
+        <com.dsc.nana.domain.workflow__definition.TransitionDefinition>
+          <fromActivityDefinitionId>UserTask_3</fromActivityDefinitionId>
+          <fromActivityDefinition reference="../../../activityDefinitions/com.dsc.nana.domain.workflow_definition.ActivityDefinition[2]"/>
+          <toActivityDefinition reference="../../../activityDefinitions/com.dsc.nana.domain.workflow_definition.ActivityDefinition[4]"/>
+          <toActivityDefinitionId>UserTask_6</toActivityDefinitionId>
+          <container class="com.dsc.nana.domain.workflow_definition.ProcessDefinition" reference="../../.."/>
+          <id>Link_7</id>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.TransitionDefinition</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../processViewInformation/startActivityBoundInfo/dtoState"/>
+          <objectVersion>0</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.TransitionDefinition>
+        <com.dsc.nana.domain.workflow__definition.TransitionDefinition>
+          <fromActivityDefinitionId>StartEvent_1</fromActivityDefinitionId>
+          <fromActivityDefinition reference="../../../activityDefinitions/com.dsc.nana.domain.workflow_definition.ActivityDefinition[3]"/>
+          <toActivityDefinition reference="../../../activityDefinitions/com.dsc.nana.domain.workflow_definition.ActivityDefinition[2]"/>
+          <toActivityDefinitionId>UserTask_3</toActivityDefinitionId>
+          <containerOID>51927ad1dedc100488d03d47ffcaf95c</containerOID>
+          <container class="com.dsc.nana.domain.workflow_definition.ProcessDefinition" reference="../../.."/>
+          <id>Link_4</id>
+          <name></name>
+          <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+            <bundleClass>com.dsc.nana.domain.workflow_definition.TransitionDefinition</bundleClass>
+          </bundleContainer>
+          <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+          <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+          <dto>true</dto>
+          <dtoState reference="../../../../../container/dtoState"/>
+          <OID>5192a567dedc100488d03d47ffcaf95c</OID>
+          <objectVersion>1</objectVersion>
+        </com.dsc.nana.domain.workflow__definition.TransitionDefinition>
+      </transitionDefinitions>
+      <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+      <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+      <dto>true</dto>
+      <dtoState reference="../../../container/dtoState"/>
+      <OID>51927ad1dedc100488d03d47ffcaf95c</OID>
+      <objectVersion>1</objectVersion>
+    </com.dsc.nana.domain.workflow__definition.ProcessDefinition>
+  </processDefinitions>
+  <redefinableHeaderOID>51927acbdedc100488d03d47ffcaf95c</redefinableHeaderOID>
+  <redefinableHeader>
+    <authorName>administrator 系統管理員</authorName>
+    <codePage>中文 zh (zho)</codePage>
+    <countryKey>中国 CN (CHN)</countryKey>
+    <publicationStatus reference="../../processDefinitions/com.dsc.nana.domain.workflow_definition.ProcessDefinition/redefinableHeader/publicationStatus"/>
+    <responsibles class="set"/>
+    <version>1</version>
+    <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+    <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+    <dto>true</dto>
+    <dtoState reference="../../container/dtoState"/>
+    <OID>51927acbdedc100488d03d47ffcaf95c</OID>
+    <objectVersion>1</objectVersion>
+  </redefinableHeader>
+  <relevantDataDefinitions class="set"/>
+  <typeDefinitions class="set"/>
+  <firstActIsReqstPerform>true</firstActIsReqstPerform>
+  <mainProcessDefinitionId>PKG14900845146141</mainProcessDefinitionId>
+  <userDefineMode>
+    <value>FORBID_DEFINE</value>
+  </userDefineMode>
+  <userInputSubject>
+    <value>1</value>
+  </userInputSubject>
+  <isUsedTemplate>false</isUsedTemplate>
+  <flowType>SignatureFlow</flowType>
+  <processModel>BPMN</processModel>
+  <id>PKG14900845146141</id>
+  <name>Mark1</name>
+  <bundleContainer class="com.dsc.nana.domain.XMLRsrcBundleContainerImpl">
+    <bundleClass>com.dsc.nana.domain.workflow_definition.ProcessPackage</bundleClass>
+  </bundleContainer>
+  <SET__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.SetProxy</SET__PROXY__CLASS__NAME>
+  <LIST__PROXY__CLASS__NAME>org.apache.ojb.broker.accesslayer.ListProxy</LIST__PROXY__CLASS__NAME>
+  <dto>true</dto>
+  <dtoState reference="../container/dtoState"/>
+  <OID>51927accdedc100488d03d47ffcaf95c</OID>
+  <objectVersion>1</objectVersion>
+</com.dsc.nana.domain.workflow__definition.ProcessPackage>

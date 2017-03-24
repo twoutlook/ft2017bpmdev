@@ -1,0 +1,182 @@
+function btn1_onclick(){
+    alert("婷婷1btn_bgyp_onclick");
+  	var FileName = "SingleOpenWin";		
+	var sql = " select BGYPNAME,BGYPSPEC,BGYPUOM from Z_BGYP  "; 
+	var SQLClaused = new Array(sql);
+	var SQLLabel = new Array("品名","规格","单位");//客制开窗的Grid Label
+	var QBEField = new Array("BGYPNAME","BGYPSPEC","BGYPUOM");//模糊查询,須和DB Table栏位名称相同
+	var QBELabel = new Array("品名","规格","单位");//模糊查询的Label
+     var ReturnId = new Array("txt_pm","txt_gg","txt_dw");//表单上的栏位代号
+	singleOpenWin(FileName, databaseCfgId_EFGP, SQLClaused, SQLLabel, QBEField, QBELabel, ReturnId, 720, 430);
+     
+}
+
+/*ASF
+===========.===========.============.============.============.===========.===========.============
+档案代号:sfaa_t
+档案名称:工單單頭檔
+档案目的:null
+档案类型:T._交易档
+===========.===========.============.============.============.===========.===========.============
+*/
+create table sfaa_t(
+sfaaent             number(5)      NOT NULL,                /*企业编号                              */
+sfaaownid           varchar2(20),                           /*资料所有者                            */
+sfaaowndp           varchar2(10),                           /*资料所有部门                          */
+sfaacrtid           varchar2(20),                           /*资料建立者                            */
+sfaacrtdp           varchar2(10),                           /*资料建立部门                          */
+sfaacrtdt           timestamp(0),                           /*资料创建日                            */
+sfaamodid           varchar2(20),                           /*资料修改者                            */
+sfaamoddt           timestamp(0),                           /*最近修改日                            */
+sfaacnfid           varchar2(20),                           /*资料确认者                            */
+sfaacnfdt           timestamp(0),                           /*资料确认日                            */
+sfaapstid           varchar2(20),                           /*资料过帐者                            */
+sfaapstdt           timestamp(0),                           /*资料过帐日                            */
+sfaastus            varchar2(10),                           /*状态码                                */
+sfaasite            varchar2(10),                           /*营运据点                              */
+sfaadocno           varchar2(20)   NOT NULL,                /*单号                                  */
+sfaadocdt           date,                                   /*单据日期                              */
+sfaa001             number(5),                              /*变更版本                              */
+sfaa002             varchar2(20),                           /*生管人员                              */
+sfaa003             varchar2(1),                            /*工单类型                              */
+                                                            /*1.一般工单,2.重工工单,3.拆件式工单,4.研发工单*/
+sfaa004             varchar2(1),                            /*发料制度                              */
+                                                            /*1.事先发料制,2.倒扣料                 */
+sfaa005             varchar2(20),                           /*工单来源                              */
+                                                            /*0.人工输入,1.MULTI,2.订单,3.计划,4.母工单转入,5.RMA判别单,6.独立需求单*/
+sfaa006             varchar2(20),                           /*来源单号                              */
+sfaa007             number(10),                             /*来源项次                              */
+sfaa008             number(10),                             /*来源项序                              */
+sfaa009             varchar2(10),                           /*参考客户                              */
+sfaa010             varchar2(40),                           /*生产料号                              */
+sfaa011             varchar2(30),                           /*特性                                  */
+sfaa012             number(20,6)   DEFAULT 0,               /*生产数量                              */
+sfaa013             varchar2(10),                           /*生产单位                              */
+sfaa014             varchar2(10),                           /*BOM版本                               */
+sfaa015             date,                                   /*BOM有效日期                           */
+sfaa016             varchar2(10),                           /*制程编号                              */
+sfaa017             varchar2(10),                           /*部门厂商                              */
+sfaa018             varchar2(10),                           /*协作据点                              */
+sfaa019             date,                                   /*预计开工日                            */
+sfaa020             date,                                   /*预计完工日                            */
+sfaa021             varchar2(20),                           /*母工单单号                            */
+sfaa022             varchar2(20),                           /*参考原始单号                          */
+sfaa023             number(10),                             /*参考原始项次                          */
+sfaa024             number(10),                             /*参考原始项序                          */
+sfaa025             varchar2(20),                           /*前工单单号                            */
+sfaa026             varchar2(20),                           /*料表批号(PBI)                         */
+sfaa027             number(20,6),                           /*No Use                                */
+sfaa028             varchar2(20),                           /*专案代号                              */
+sfaa029             varchar2(30),                           /*WBS                                   */
+sfaa030             varchar2(30),                           /*活动                                  */
+sfaa031             varchar2(10),                           /*理由码                                */
+sfaa032             number(20,6),                           /*紧急比率                              */
+sfaa033             number(10),                             /*优先级                                */
+sfaa034             varchar2(10),                           /*预计入库库位                          */
+sfaa035             varchar2(10),                           /*预计入库储位                          */
+sfaa036             varchar2(20),                           /*手册编号                              */
+sfaa037             varchar2(20),                           /*保税核准文号                          */
+sfaa038             varchar2(1),                            /*保税核销                              */
+sfaa039             varchar2(1),                            /*备料已产生                            */
+sfaa040             varchar2(1),                            /*生产途程已确认                        */
+sfaa041             varchar2(1),                            /*冻结                                  */
+sfaa042             varchar2(1),                            /*重工                                  */
+sfaa043             varchar2(1),                            /*备置                                  */
+sfaa044             varchar2(1),                            /*FQC                                   */
+sfaa045             date,                                   /*实际开始发料日                        */
+sfaa046             date,                                   /*最后入库日                            */
+sfaa047             date,                                   /*生管结案日                            */
+sfaa048             date,                                   /*成本结案日                            */
+sfaa049             number(20,6)   DEFAULT 0,               /*已发料套数                            */
+sfaa050             number(20,6)   DEFAULT 0,               /*已入库合格量                          */
+sfaa051             number(20,6)   DEFAULT 0,               /*已入库不合格量                        */
+sfaa052             number(20,6)   DEFAULT 0,               /*Bouns                                 */
+sfaa053             number(20,6)   DEFAULT 0,               /*工单转入数量                          */
+sfaa054             number(20,6)   DEFAULT 0,               /*工单转出数量                          */
+sfaa055             number(20,6)   DEFAULT 0,               /*下线数量                              */
+sfaa056             number(20,6)   DEFAULT 0,               /*报废数量                              */
+sfaa057             varchar2(1),                            /*委外类型                              */
+                                                            /*1.厂内,2.委外                         */
+sfaa058             number(20,6)   DEFAULT 0,               /*参考数量                              */
+sfaa059             varchar2(30),                           /*预计入库批号                          */
+sfaa060             varchar2(10),                           /*参考单位                              */
+sfaa061             varchar2(1),                            /*制程                                  */
+sfaa062             varchar2(1),                            /*纳入APS计算                           */
+sfaa063             number(5),                              /*来源分批序                            */
+sfaa064             number(5),                              /*参考原始分批序                        */
+sfaa065             varchar2(10),                           /*生管结案状态                          */
+sfaa066             varchar2(10),                           /*多角流程代码                          */
+sfaa067             varchar2(20),                           /*多角流进程号                          */
+sfaa068             varchar2(10),                           /*成本中心                              */
+sfaa069             number(20,6)   DEFAULT 0,               /*可供给量                              */
+sfaa070             date,                                   /*原始预计完工日期                      */
+sfaaud001           varchar2(40),                           /*自定义栏位(文本)001                   */
+sfaaud002           varchar2(40),                           /*自定义栏位(文本)002                   */
+sfaaud003           varchar2(40),                           /*自定义栏位(文本)003                   */
+sfaaud004           varchar2(40),                           /*自定义栏位(文本)004                   */
+sfaaud005           varchar2(40),                           /*自定义栏位(文本)005                   */
+sfaaud006           varchar2(40),                           /*自定义栏位(文本)006                   */
+sfaaud007           varchar2(40),                           /*自定义栏位(文本)007                   */
+sfaaud008           varchar2(40),                           /*自定义栏位(文本)008                   */
+sfaaud009           varchar2(40),                           /*自定义栏位(文本)009                   */
+sfaaud010           varchar2(40),                           /*自定义栏位(文本)010                   */
+sfaaud011           number(20,6)   DEFAULT 0,               /*自定义栏位(数字)011                   */
+sfaaud012           number(20,6)   DEFAULT 0,               /*自定义栏位(数字)012                   */
+sfaaud013           number(20,6)   DEFAULT 0,               /*自定义栏位(数字)013                   */
+sfaaud014           number(20,6)   DEFAULT 0,               /*自定义栏位(数字)014                   */
+sfaaud015           number(20,6)   DEFAULT 0,               /*自定义栏位(数字)015                   */
+sfaaud016           number(20,6)   DEFAULT 0,               /*自定义栏位(数字)016                   */
+sfaaud017           number(20,6)   DEFAULT 0,               /*自定义栏位(数字)017                   */
+sfaaud018           number(20,6)   DEFAULT 0,               /*自定义栏位(数字)018                   */
+sfaaud019           number(20,6)   DEFAULT 0,               /*自定义栏位(数字)019                   */
+sfaaud020           number(20,6)   DEFAULT 0,               /*自定义栏位(数字)020                   */
+sfaaud021           timestamp(0),                           /*自定义栏位(日期时间)021               */
+sfaaud022           timestamp(0),                           /*自定义栏位(日期时间)022               */
+sfaaud023           timestamp(0),                           /*自定义栏位(日期时间)023               */
+sfaaud024           timestamp(0),                           /*自定义栏位(日期时间)024               */
+sfaaud025           timestamp(0),                           /*自定义栏位(日期时间)025               */
+sfaaud026           timestamp(0),                           /*自定义栏位(日期时间)026               */
+sfaaud027           timestamp(0),                           /*自定义栏位(日期时间)027               */
+sfaaud028           timestamp(0),                           /*自定义栏位(日期时间)028               */
+sfaaud029           timestamp(0),                           /*自定义栏位(日期时间)029               */
+sfaaud030           timestamp(0)                            /*自定义栏位(日期时间)030               */
+);
+
+
+alter table sfaa_t add constraint sfaa_pk primary key (sfaaent,sfaadocno) enabled validated;
+grant select on sfaa_t to tiptopgp;
+grant update on sfaa_t to tiptopgp;
+grant delete on sfaa_t to tiptopgp;
+grant insert on sfaa_t to tiptopgp;
+grant index  on sfaa_t to public;
+grant select on sfaa_t to ods;
+
+ 
+
+
+select b.sfaa010,d.imaal003,c.sfcb003,a.sfca003,c.sfcb045 from sfca_t a 
+left join sfaa_t b on b.sfaadocno=a.sfcadocno
+left join sfcb_t c on c.sfcbdocno=b.sfaadocno
+left join imaal_t d on d.imaal001=b.sfaa010
+
+where a.sfcadocno='FULSF08-170300001' 
+
+
+select b.sfaa010 生产料号 ,d.imaal003 品名,c.sfcb003 本站作业,a.sfca003 生产数量,c.sfcb045 预计完工日 from sfca_t a 
+left join sfaa_t b on b.sfaadocno=a.sfcadocno
+left join sfcb_t c on c.sfcbdocno=b.sfaadocno
+left join imaal_t d on d.imaal001=b.sfaa010
+
+
+function btn2_onclick(){
+    alert("DEBUG ...btn2_onclick");
+  	var FileName = "SingleOpenWin";		
+	var sql = " select BGYPNAME,BGYPSPEC,BGYPUOM from Z_BGYP  "; 
+	var SQLClaused = new Array(sql);
+	var SQLLabel = new Array("品名","规格","单位");//客制开窗的Grid Label
+	var QBEField = new Array("BGYPNAME","BGYPSPEC","BGYPUOM");//模糊查询,須和DB Table栏位名称相同
+	var QBELabel = new Array("品名","规格","单位");//模糊查询的Label
+     var ReturnId = new Array("txt_pm","txt_gg","txt_dw");//表单上的栏位代号
+	singleOpenWin(FileName, databaseCfgId_EFGP, SQLClaused, SQLLabel, QBEField, QBELabel, ReturnId, 720, 430);
+     
+}

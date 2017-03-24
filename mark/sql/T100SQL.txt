@@ -1,0 +1,21 @@
+V_SUP
+
+select  B.id EMPE_ID,B.userName  EMPE_NAME, OrganizationUnit.ID DEPT_ID,OrganizationUnit.ORGANIZATIONUNITNAME DEPT_NAME,
+nvl(A.id,C.id) as SUP_ID,nvl(A.username,C.username) as SUP_NAME 
+ from Users A , Functions, Users B ,OrganizationUnit , Users C   where 
+Functions.SPECIFIEDMANAGEROID = A.OID (+)
+and Functions.OCCUPANTOID = B.OID 
+--and Functions.isMain = 1 
+and OrganizationUnit.managerOID = C.OID (+) 
+and OrganizationUnit.OID  = Functions.organizationUnitOID
+
+
+V_EMPE
+select U.id EMPE_ID,U.userName EMPE_NAME, FD.functionDefinitionName JOB,OU.id DEPT_ID,OU.organizationUnitName DEPT_NAME,
+ SUP.SUP_ID, SUP.SUP_NAME,
+ TO_CHAR(U.leaveDate, 'YYYY-MM-DD') LEAVE_DATE
+from Users U 
+inner Join Functions F on F.occupantOID=U.OID 
+inner Join OrganizationUnit OU ON OU.OID=F.organizationUnitOID 
+inner Join FunctionDefinition FD ON FD.OID=F.definitionOID
+left Join V_SUP SUP ON U.id=SUP.EMPE_ID AND OU.id=SUP.DEPT_ID
